@@ -1,9 +1,9 @@
 import DefaultLayout from "~components/layouts";
 
-const Home = () => (
+const HomePage = () => (
   <DefaultLayout>
     <h1>Welcome to Zemnoga</h1>
   </DefaultLayout>
 );
 
-export default Home;
+export default HomePage;
