@@ -2,18 +2,23 @@
  * @jest-environment jsdom
  */
 
-import React from 'react'
-import { render, screen } from '@testing-library/react'
-import Home from '../src/pages/index'
+import React from "react";
+import { render, screen } from "@testing-library/react";
 
-describe('Home', () => {
-  it('renders a heading', () => {
-    render(<Home />)
+import Home from "~/pages/index";
 
-    const heading = screen.getByRole('heading', {
-      name: /welcome to next\.js!/i,
-    })
+describe("Home", () => {
+  beforeEach(() => render(<Home />));
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+  it("should match the snapshot", () => {
+    expect(screen).toMatchSnapshot();
+  });
+
+  it("should render a heading", () => {
+    const heading = screen.getByRole("heading", {
+      name: /welcome to zemnoga/i,
+    });
+
+    expect(heading).toBeInTheDocument();
+  });
+});
