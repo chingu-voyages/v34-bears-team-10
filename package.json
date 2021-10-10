@@ -15,7 +15,8 @@
     "lint": "next lint",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "test": "jest",
+    "test:dev": "jest --watch",
     "test:ci": "jest --ci"
   },
   "dependencies": {
@@ -24,6 +25,8 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.3.0",
@@ -31,6 +34,7 @@
     "eslint": "^8.0.0",
     "eslint-config-next": "^11.1.2",
     "eslint-plugin-testing-library": "^4.12.4",
+    "husky": "^7.0.2",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.2.5",
     "react-test-renderer": "^17.0.2"
