@@ -1,4 +1,5 @@
 import Head from "next/head";
+import PropTypes from "prop-types";
 
 const DefaultLayout = ({ children }) => {
   return (
@@ -12,6 +13,10 @@ const DefaultLayout = ({ children }) => {
       <footer>footer</footer>
     </>
   );
+};
+
+DefaultLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default DefaultLayout;
