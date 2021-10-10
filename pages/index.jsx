@@ -1,4 +1,4 @@
-import DefaultLayout from "~components/layouts";
+import DefaultLayout from "@components/layouts";
 
 const HomePage = () => (
   <DefaultLayout>
