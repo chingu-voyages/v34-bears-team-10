@@ -5,26 +5,24 @@ import { createTheme } from "@mui/material/styles";
  *
  * @see https://next.material-ui.com/customization/default-theme/
  */
-const themeGenerator = ["light", "dark"].map((mode) =>
-  createTheme({
-    palette: {
-      mode,
-    },
-    typography: {
-      fontFamily: [
-        `"Roboto"`,
-        `"Segoe UI"`,
-        `"Oxygen"`,
-        `"Ubuntu"`,
-        `"Cantarell"`,
-        `"Fira Sans"`,
-        `"Droid Sans"`,
-        `"Helvetica Neue"`,
-        `sans-serif`,
-      ].join(","),
-    },
-  })
-);
+const themeGenerator = ["light", "dark"].map((mode) => createTheme({
+  palette: {
+    mode,
+  },
+  typography: {
+    fontFamily: [
+      '"Roboto"',
+      '"Segoe UI"',
+      '"Oxygen"',
+      '"Ubuntu"',
+      '"Cantarell"',
+      '"Fira Sans"',
+      '"Droid Sans"',
+      '"Helvetica Neue"',
+      "sans-serif",
+    ].join(","),
+  },
+}));
 
 export default {
   light: themeGenerator[0],

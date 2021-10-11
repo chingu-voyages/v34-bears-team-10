@@ -17,7 +17,7 @@ export default function MyApp({
   return (
     <CacheProvider value={emotionCache}>
       {/* Theme is hardcoded to light, we might add themeing at a later point */}
-      <ThemeProvider theme={theme["light"]}>
+      <ThemeProvider theme={theme.light}>
         <CssBaseline />
         <Component {...pageProps} />
       </ThemeProvider>
@@ -27,6 +27,8 @@ export default function MyApp({
 
 MyApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
   emotionCache: PropTypes.object,
+  // eslint-disable-next-line react/forbid-prop-types
   pageProps: PropTypes.object.isRequired,
 };

@@ -1,4 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, {
+  Html, Head, Main, NextScript,
+} from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
 
 import createEmotionCache from "@/emotionCache";
@@ -53,10 +55,9 @@ MyDocument.getInitialProps = async (ctx) => {
   const cache = createEmotionCache();
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
-  ctx.renderPage = () =>
-    originalRenderPage({
-      enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
-    });
+  ctx.renderPage = () => originalRenderPage({
+    enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
+  });
 
   const initialProps = await Document.getInitialProps(ctx);
   // This is important. It prevents emotion to render invalid HTML.
