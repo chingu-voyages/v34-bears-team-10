@@ -1,5 +1,27 @@
 module.exports = {
-  collectCoverageFrom: ["**/*.{js,jsx,ts,tsx}", "!**/*.d.ts", "!**/node_modules/**"],
+  // Enabled code coverage with istanbul reporter
+  collectCoverage: true,
+  coverageReporters: ["json", "html"],
+  collectCoverageFrom: [
+    "<rootDir>/src/**/*.{js,jsx}",
+    "<rootDir>/pages/**/*.{js,jsx}",
+    // Ignore patterns
+    "!<rootDir>/pages/_app.jsx",
+    "!<rootDir>/pages/_document.jsx",
+    "!**/*.d.ts",
+    "!**/node_modules/**",
+    "!**/data/**",
+    "!**/public/**",
+  ],
+  // Minimum threshold for the tests to pass
+  coverageThreshold: {
+    global: {
+      branches: 80,
+      functions: 20,
+      lines: 20,
+      statements: 20,
+    },
+  },
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
     // https://jestjs.io/docs/webpack#mocking-css-modules

@@ -19,6 +19,7 @@
     "format:lint": "eslint --fix \"src/**/*.{js,jsx}\" \"pages/**/*.{js,jsx}\"",
     "test": "jest",
     "test:dev": "jest --watch",
+    "test:cov": "jest --collectCoverage",
     "test:ci": "jest --ci",
     "cont:add": "all-contributors add",
     "cont:g": "all-contributors generate"
