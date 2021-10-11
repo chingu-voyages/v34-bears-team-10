@@ -1,0 +1,25 @@
+{
+  "projectName": "v34-bears-team-10",
+  "projectOwner": "chingu-voyages",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "Kerosz",
+      "name": "Andrei Chirila",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31253154?v=4",
+      "profile": "https://chirila.dev/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}
