@@ -3,8 +3,8 @@ Zemno
 </h1>
 
 <p align="center">
-  <a href="https://app.netlify.com/sites/dekoo/deploys">
-    <img alt="GitHub issues" src="https://api.netlify.com/api/v1/badges/f3334933-5224-4b84-afe5-5de7c0d0aecb/deploy-status">
+  <a href="https://app.netlify.com/sites/zemno/deploys">
+    <img alt="GitHub issues" src="https://api.netlify.com/api/v1/badges/868fd53d-9ae1-4faf-a125-18ed0df0c50e/deploy-status">
   </a>
   <a href="https://github.com/chingu-voyages/v34-bears-team-10/issues">
     <img alt="GitHub issues" src="https://img.shields.io/github/issues/chingu-voyages/v34-bears-team-10">
@@ -25,7 +25,7 @@ Zemno
 
 ## Quick Links
 
-- **Backend Project**: [docs.dekoo.tk](https://docs.dekoo.tk/)
+- **Backend Project**: [zemno-be.github.com](https://github.com/chingu-voyages/v34-bears-team-10be)
 
 <!-- ABOUT THE PROJECT -->
 
@@ -103,7 +103,7 @@ please see the document [How to Contribute](./CONTRIBUTING.md), which covers the
 
 ## Feedback
 
-- [Request a new feature](https://github.com/chingu-voyages/v34-bears-team-10/issues)
+- [Request a new feature](https://github.com/chingu-voyages/v34-bears-team-10/issues/new?assignees=&labels=feature-request&template=feature_request.md&title=%5BRequest%5D+My+feature+request+title)
 - Upvote [feature requests](https://github.com/chingu-voyages/v34-bears-team-10/labels/feature-request)
 - [File an issue](https://github.com/chingu-voyages/v34-bears-team-10/issues/new/choose)
 
