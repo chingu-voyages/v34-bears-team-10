@@ -11,9 +11,6 @@
         "plugin:@next/next/recommended"
     ],
     "parser": "@babel/eslint-parser",
-    "globals": {
-      "React": "writable"
-    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -52,6 +49,7 @@
         ],
         "no-param-reassign": 0,
         "no-shadow": 0,
+        "implicit-arrow-linebreak": 0,
         "prefer-const": "error",
         "no-underscore-dangle": 0,
         "quotes": 0,
