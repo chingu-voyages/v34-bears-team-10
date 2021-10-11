@@ -1,0 +1,74 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "airbnb",
+        "plugin:react/recommended",
+        "plugin:@next/next/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "globals": {
+      "React": "writable"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2020,
+        "sourceType": "module"
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+    "plugins": [
+        "testing-library",
+        "react",
+        "react-hooks",
+        "simple-import-sort"
+    ],
+    "rules": {
+        "import/extensions": 0,
+        "import/no-unresolved": 0,
+        "import/no-named-as-default": 0,
+        "import/prefer-default-export": 0,
+        "import/no-extraneous-dependencies": 0,
+        "react/prefer-stateless-function": 1,
+        "react/require-default-props": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/state-in-constructor": 0,
+        "react/display-name": 0,
+        "no-console": [
+        2,
+        {
+            "allow": ["warn", "error"]
+        }
+        ],
+        "no-param-reassign": 0,
+        "no-shadow": 0,
+        "prefer-const": "error",
+        "no-underscore-dangle": 0,
+        "quotes": 0,
+        "func-names": 0,
+        "camelcase": 0
+    },
+    "overrides": [
+        // Only uses Testing Library lint rules in test files
+        {
+          "files": [
+            "**/tests/**/*.[jt]s?(x)",
+            "**/?(*.)+(spec|test).[jt]s?(x)"
+          ],
+          "env": {
+            "jest": true
+          },
+          "extends": ["plugin:testing-library/react"]
+        }
+      ]
+}
