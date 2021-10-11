@@ -15,7 +15,11 @@ specifiers:
   all-contributors-cli: ^6.20.0
   babel-jest: ^27.2.5
   eslint: ^8.0.0
+  eslint-config-airbnb: ^18.2.1
   eslint-config-next: ^11.1.2
+  eslint-plugin-react: ^7.26.1
+  eslint-plugin-react-hooks: ^4.2.0
+  eslint-plugin-simple-import-sort: ^7.0.0
   eslint-plugin-testing-library: ^4.12.4
   husky: ^7.0.2
   identity-obj-proxy: ^3.0.0
@@ -50,7 +54,11 @@ devDependencies:
   all-contributors-cli: 6.20.0
   babel-jest: 27.2.5
   eslint: 8.0.0
+  eslint-config-airbnb: 18.2.1_30052396ddd3f05b249910948dc55df0
   eslint-config-next: 11.1.2_eslint@8.0.0+next@11.1.2
+  eslint-plugin-react: 7.26.1_eslint@8.0.0
+  eslint-plugin-react-hooks: 4.2.0_eslint@8.0.0
+  eslint-plugin-simple-import-sort: 7.0.0_eslint@8.0.0
   eslint-plugin-testing-library: 4.12.4_eslint@8.0.0
   husky: 7.0.2
   identity-obj-proxy: 3.0.0
@@ -3238,6 +3246,13 @@ packages:
     resolution: { integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s= }
     dev: true
 
+  /confusing-browser-globals/1.0.10:
+    resolution:
+      {
+        integrity: sha512-gNld/3lySHwuhaVluJUKLePYirM3QNCKzVxqAdhJII9/WXKVX5PURzMVJspS1jTslSqjeuG4KMVTSouit5YPHA==,
+      }
+    dev: true
+
   /console-browserify/1.2.0:
     resolution:
       {
@@ -3942,6 +3957,43 @@ packages:
       source-map: 0.6.1
     dev: true
 
+  /eslint-config-airbnb-base/14.2.1_eslint@8.0.0:
+    resolution:
+      {
+        integrity: sha512-GOrQyDtVEc1Xy20U7vsB2yAoB4nBlfH5HZJeatRXHleO+OS5Ot+MWij4Dpltw4/DyIkqUfqz1epfhVR5XWWQPA==,
+      }
+    engines: { node: ">= 6" }
+    peerDependencies:
+      eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+      eslint-plugin-import: ^2.22.1
+    dependencies:
+      confusing-browser-globals: 1.0.10
+      eslint: 8.0.0
+      object.assign: 4.1.2
+      object.entries: 1.1.5
+    dev: true
+
+  /eslint-config-airbnb/18.2.1_30052396ddd3f05b249910948dc55df0:
+    resolution:
+      {
+        integrity: sha512-glZNDEZ36VdlZWoxn/bUR1r/sdFKPd1mHPbqUtkctgNG4yT2DLLtJ3D+yCV+jzZCc2V1nBVkmdknOJBZ5Hc0fg==,
+      }
+    engines: { node: ">= 6" }
+    peerDependencies:
+      eslint: ^5.16.0 || ^6.8.0 || ^7.2.0
+      eslint-plugin-import: ^2.22.1
+      eslint-plugin-jsx-a11y: ^6.4.1
+      eslint-plugin-react: ^7.21.5
+      eslint-plugin-react-hooks: ^4 || ^3 || ^2.3.0 || ^1.7.0
+    dependencies:
+      eslint: 8.0.0
+      eslint-config-airbnb-base: 14.2.1_eslint@8.0.0
+      eslint-plugin-react: 7.26.1_eslint@8.0.0
+      eslint-plugin-react-hooks: 4.2.0_eslint@8.0.0
+      object.assign: 4.1.2
+      object.entries: 1.1.5
+    dev: true
+
   /eslint-config-next/11.1.2_eslint@8.0.0+next@11.1.2:
     resolution:
       {
@@ -4098,6 +4150,17 @@ packages:
       resolve: 2.0.0-next.3
       semver: 6.3.0
       string.prototype.matchall: 4.0.6
+    dev: true
+
+  /eslint-plugin-simple-import-sort/7.0.0_eslint@8.0.0:
+    resolution:
+      {
+        integrity: sha512-U3vEDB5zhYPNfxT5TYR7u01dboFZp+HNpnGhkDB2g/2E4wZ/g1Q9Ton8UwCLfRV9yAKyYqDh62oHOamvkFxsvw==,
+      }
+    peerDependencies:
+      eslint: ">=5.0.0"
+    dependencies:
+      eslint: 8.0.0
     dev: true
 
   /eslint-plugin-testing-library/4.12.4_eslint@8.0.0:

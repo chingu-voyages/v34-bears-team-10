@@ -2,3 +2,4 @@
 **/.next/*
 **/*.config.js
 **/*.json
+**/public/*
