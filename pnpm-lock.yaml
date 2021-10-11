@@ -8,6 +8,7 @@ specifiers:
   "@emotion/server": ^11.4.0
   "@emotion/styled": ^11.3.0
   "@mui/material": ^5.0.3
+  "@reduxjs/toolkit": ^1.6.2
   "@testing-library/jest-dom": 5.14.1
   "@testing-library/react": ^12.1.2
   "@testing-library/user-event": ^13.3.0
@@ -24,6 +25,7 @@ specifiers:
   prop-types: ^15.7.2
   react: ^17.0.2
   react-dom: ^17.0.2
+  react-redux: ^7.2.5
   react-test-renderer: ^17.0.2
 
 dependencies:
@@ -32,9 +34,11 @@ dependencies:
   "@emotion/server": 11.4.0
   "@emotion/styled": 11.3.0_a004d704e6197b43c0d970f424150c43
   "@mui/material": 5.0.3_3d4af7eb5b86aa12d9008f964c673b75
+  "@reduxjs/toolkit": 1.6.2_react-redux@7.2.5+react@17.0.2
   next: 11.1.2_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
+  react-redux: 7.2.5_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   "@commitlint/cli": 13.2.1
@@ -1715,6 +1719,28 @@ packages:
       }
     dev: false
 
+  /@reduxjs/toolkit/1.6.2_react-redux@7.2.5+react@17.0.2:
+    resolution:
+      {
+        integrity: sha512-HbfI/hOVrAcMGAYsMWxw3UJyIoAS9JTdwddsjlr5w3S50tXhWb+EMyhIw+IAvCVCLETkzdjgH91RjDSYZekVBA==,
+      }
+    peerDependencies:
+      react: ^16.14.0 || ^17.0.0
+      react-redux: ^7.2.1
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-redux:
+        optional: true
+    dependencies:
+      immer: 9.0.6
+      react: 17.0.2
+      react-redux: 7.2.5_react-dom@17.0.2+react@17.0.2
+      redux: 4.1.1
+      redux-thunk: 2.3.0
+      reselect: 4.0.0
+    dev: false
+
   /@rushstack/eslint-patch/1.0.7:
     resolution:
       {
@@ -1868,6 +1894,16 @@ packages:
       "@types/node": 16.10.3
     dev: true
 
+  /@types/hoist-non-react-statics/3.3.1:
+    resolution:
+      {
+        integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==,
+      }
+    dependencies:
+      "@types/react": 17.0.27
+      hoist-non-react-statics: 3.3.2
+    dev: false
+
   /@types/istanbul-lib-coverage/2.0.3:
     resolution:
       {
@@ -1961,6 +1997,18 @@ packages:
       }
     dependencies:
       "@types/react": 17.0.27
+    dev: false
+
+  /@types/react-redux/7.1.19:
+    resolution:
+      {
+        integrity: sha512-L37dSCT0aoJnCgpR8Iuginlbxoh7qhWOXiaDqEsxVMrER1CmVhFD+63NxgJeT4pkmEM28oX0NH4S4f+sXHTZjA==,
+      }
+    dependencies:
+      "@types/hoist-non-react-statics": 3.3.1
+      "@types/react": 17.0.27
+      hoist-non-react-statics: 3.3.2
+      redux: 4.1.1
     dev: false
 
   /@types/react-transition-group/4.4.3:
@@ -4876,6 +4924,13 @@ packages:
       queue: 6.0.2
     dev: false
 
+  /immer/9.0.6:
+    resolution:
+      {
+        integrity: sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==,
+      }
+    dev: false
+
   /import-fresh/3.3.0:
     resolution:
       {
@@ -7283,6 +7338,31 @@ packages:
         integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==,
       }
 
+  /react-redux/7.2.5_react-dom@17.0.2+react@17.0.2:
+    resolution:
+      {
+        integrity: sha512-Dt29bNyBsbQaysp6s/dN0gUodcq+dVKKER8Qv82UrpeygwYeX1raTtil7O/fftw/rFqzaf6gJhDZRkkZnn6bjg==,
+      }
+    peerDependencies:
+      react: ^16.8.3 || ^17
+      react-dom: "*"
+      react-native: "*"
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
+      react-native:
+        optional: true
+    dependencies:
+      "@babel/runtime": 7.15.4
+      "@types/react-redux": 7.1.19
+      hoist-non-react-statics: 3.3.2
+      loose-envify: 1.4.0
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      react-is: 16.13.1
+    dev: false
+
   /react-refresh/0.8.3:
     resolution:
       {
@@ -7445,6 +7525,22 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
+  /redux-thunk/2.3.0:
+    resolution:
+      {
+        integrity: sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw==,
+      }
+    dev: false
+
+  /redux/4.1.1:
+    resolution:
+      {
+        integrity: sha512-hZQZdDEM25UY2P493kPYuKqviVwZ58lEmGQNeQ+gXa+U0gYPUBf7NKYazbe3m+bs/DzM/ahN12DbF+NG8i0CWw==,
+      }
+    dependencies:
+      "@babel/runtime": 7.15.4
+    dev: false
+
   /regenerator-runtime/0.13.9:
     resolution:
       {
@@ -7474,6 +7570,13 @@ packages:
     resolution: { integrity: sha1-jGStX9MNqxyXbiNE/+f3kqam30I= }
     engines: { node: ">=0.10.0" }
     dev: true
+
+  /reselect/4.0.0:
+    resolution:
+      {
+        integrity: sha512-qUgANli03jjAyGlnbYVAV5vvnOmJnODyABz51RdBN7M4WaVu8mecZWgyQNkG8Yqe3KRGRt0l4K4B3XVEULC4CA==,
+      }
+    dev: false
 
   /resolve-cwd/3.0.0:
     resolution:
