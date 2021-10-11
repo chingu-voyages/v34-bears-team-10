@@ -5,7 +5,7 @@
     "es2020": true,
     "node": true
   },
-  "extends": ["next/core-web-vitals", "airbnb", "plugin:react/recommended"],
+  "extends": ["next", "next/core-web-vitals", "airbnb", "plugin:react/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
