@@ -13,15 +13,15 @@ module.exports = {
     "!**/data/**",
     "!**/public/**",
   ],
-  // Minimum threshold for the tests to pass
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 20,
-      lines: 20,
-      statements: 20,
-    },
-  },
+  // Minimum threshold for the tests to pass [DO NOT DELETE]
+  // coverageThreshold: {
+  //   global: {
+  //     branches: 80,
+  //     functions: 80,
+  //     lines: 80,
+  //     statements: 80,
+  //   },
+  // },
   moduleNameMapper: {
     // Handle CSS imports (with CSS modules)
     // https://jestjs.io/docs/webpack#mocking-css-modules
