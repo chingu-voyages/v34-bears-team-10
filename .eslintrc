@@ -49,11 +49,15 @@
         ],
         "no-param-reassign": 0,
         "no-shadow": 0,
+        "object-curly-newline": 0,
         "implicit-arrow-linebreak": 0,
         "prefer-const": "error",
         "no-underscore-dangle": 0,
+        "operator-linebreak": 0,
         "quotes": 0,
         "func-names": 0,
+        "function-paren-newline": 0,
+        "comma-dangle": 0,
         "camelcase": 0
     },
     "overrides": [
